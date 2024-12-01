@@ -1,3 +1,4 @@
 /united-movers-api/bin
 /united-movers-api/obj
 .github
+*.vsidx
