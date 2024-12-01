@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Repositories\**" />
+    <Content Remove="Repositories\**" />
+    <EmbeddedResource Remove="Repositories\**" />
+    <None Remove="Repositories\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Isopoh.Cryptography.Argon2" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
@@ -22,12 +29,6 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Data\" />
-    <Folder Include="DTO\" />
-    <Folder Include="Repositories\" />
   </ItemGroup>
 
 </Project>
